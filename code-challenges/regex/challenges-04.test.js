@@ -1,6 +1,5 @@
 'use strict';
 
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
@@ -13,11 +12,7 @@ For example:
 'hello world' returns false
 ------------------------------------------------------------------------------------------------ */
 
-const isNum = (input) => {
-  // Solution code here...
-  let numInInput= /\d/;
-  return numInInput.test(input);
-};
+const isNum = input => /\d/g.test(input);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -27,11 +22,7 @@ Write a function named isCapitalized that takes in a string. This function shoul
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
-const isCapitalized = (str) => {
-  let regEx = /[A-Z]\w+/g;
-  return str.match(regEx)||[];
-  // Solution code here...
-};
+const isCapitalized = str => str.match(/[A-Z]\w*/g) ? str.match(/[A-Z]\w*/g) : [];
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -40,15 +31,14 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here..
-  let arrCheck = /^[A-J]\w+/g;
-  let newArr=[];
-  for (let i=0; i<arr.length; i++){
-    if (arr[i].match(arrCheck)){
-   newArr.push(arr[i]);
+  // Solution code here...
+  let cityNames = [];
+  arr.forEach(city => {
+    if (/^[A-J]/.test(city)) {
+      cityNames.push(city);
     }
-  }
-  return newArr;
+  });
+  return cityNames;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -63,12 +53,7 @@ If the user enters any of these four inputs, return true. For any other input, r
 Do not use the vertical bar (pipe) in your pattern.
 ------------------------------------------------------------------------------------------------ */
 
-const matchMonth = (input) => {
-  // Solution code here...
-  // input = (input.toString()).toLowerCase();
-  let correctAnswer = /^[Oo]ct(ober)?$/
-  return correctAnswer.test(input);
-};
+const matchMonth = input => /^[oO]ct(ober)?$/.test(input);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -80,13 +65,7 @@ For example, if given the string "Hello, and have a wonderful day!", the word "H
 The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "a ", "wonderful "].
 ------------------------------------------------------------------------------------------------ */
 
-const noPunctuation = str => {
-  let capitalCheck = /\w+\s/g;
-  let newArr =[];
-  newArr = str.match(capitalCheck);
-  return newArr;
-  // Solution code here...
-};
+const noPunctuation = str => str.match(/[a-zA-Z0-9]*\w\s/g);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -100,11 +79,7 @@ The function should return a string containing the consonants in their original 
 For example, 'Welcome to Code 301!' will return 'W_lc_m_ t_ C_d_ 301!'.
 ------------------------------------------------------------------------------------------------ */
 
-let hangman = (str) => {
- let updatedString= str.replace(/[aeiouAEIOU]/g, '_');
-  return updatedString;
-  // Solution code here...
-};
+let hangman = (str) => str.replace(/[aAeEiIoOuU]/gi, '_');
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
@@ -118,9 +93,7 @@ Hint: All of these words end with the letters "ells".
 
 const seashells = 'She sells seashells by the seashore. The shells she sells are surely seashells. So if she sells shells on the seashore, I\'m sure she sells seashore shells.';
 
-const findShells = (str) => {
-  // Solution code here...
-};
+const findShells = (str) => str.match(/((seash)?(sh)?(s)?)?ells/g);
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
