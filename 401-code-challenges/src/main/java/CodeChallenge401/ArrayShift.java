@@ -4,7 +4,20 @@
 package CodeChallenge401;
 
 public class ArrayShift {
-    public boolean someLibraryMethod() {
-        return true;
+    public int[] arrayShift(int[] inputArray, int numToInsert){
+
+        int[] result = new int[inputArray.length + 1];
+        int mid = (int) (inputArray.length / 2);
+
+        for(int i = 0; i < result.length; i++){
+            if(i < inputArray.length / 2){
+                result[i] = inputArray[i];
+            } else if (i == mid){
+                result[mid] = numToInsert;
+            } else {
+                result[i] = inputArray[i - 1];
+            }
+        }
+        return result;
     }
 }

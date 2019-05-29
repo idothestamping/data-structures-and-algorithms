@@ -2,42 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d18b839-9aee-4f86-b830-31446fc833b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_27_0_1_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_checkerframework_checker_qual_2_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/CodeChallenge401.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/CodeChallenge401.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/CodeChallenge401.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/ArrayShift.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/assets/ArrayShift.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayReverse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayShift.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CodeChallenge401/ArrayReverseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CodeChallenge401/ArrayShiftTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array-reverse/ArrayReverse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/array-reverse/ArrayReverse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/ArrayShift.md" beforeDir="false" afterPath="$PROJECT_DIR$/documents/ArrayShift.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayShift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CodeChallenge401/ArrayShiftTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CodeChallenge401/ArrayShiftTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -54,12 +22,12 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayShift.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="300">
+              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -67,17 +35,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CodeChallenge401/ArrayShiftTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="315">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
-                <element signature="e#0#387#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayReverse.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -113,10 +80,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayShift.java" />
         <option value="$PROJECT_DIR$/src/test/java/CodeChallenge401/LibraryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/CodeChallenge401/ArrayReverseTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayReverse.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CodeChallenge401/ArrayShiftTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayShift.java" />
       </list>
     </option>
   </component>
@@ -132,35 +100,33 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="401-code-challenges" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeChallenge401" type="b2602c69:ProjectViewProjectNode" />
               <item name="401-code-challenges" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="401-code-challenges" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeChallenge401" type="b2602c69:ProjectViewProjectNode" />
               <item name="401-code-challenges" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="401-code-challenges" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeChallenge401" type="b2602c69:ProjectViewProjectNode" />
               <item name="401-code-challenges" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="401-code-challenges" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeChallenge401" type="b2602c69:ProjectViewProjectNode" />
               <item name="401-code-challenges" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="401-code-challenges" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeChallenge401" type="b2602c69:ProjectViewProjectNode" />
               <item name="401-code-challenges" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
@@ -168,20 +134,20 @@
               <item name="CodeChallenge401" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="401-code-challenges" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeChallenge401" type="b2602c69:ProjectViewProjectNode" />
               <item name="401-code-challenges" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="401-code-challenges" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeChallenge401" type="b2602c69:ProjectViewProjectNode" />
               <item name="401-code-challenges" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="401-code-challenges" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CodeChallenge401" type="b2602c69:ProjectViewProjectNode" />
               <item name="401-code-challenges" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
@@ -192,10 +158,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559111967804" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559148268207" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -214,7 +182,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ArrayReverseTest">
+  <component name="RunManager" selected="JUnit.ArrayShiftTest">
     <configuration name="ArrayReverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CodeChallenge401.ArrayReverse" />
       <module name="CodeChallenge401.main" />
@@ -327,19 +295,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.ArrayReverse" />
-      <item itemvalue="TestNG.ArrayShift" />
+      <item itemvalue="Application.ArrayReverse" />
       <item itemvalue="JUnit.ArrayShiftTest" />
       <item itemvalue="JUnit.ArrayShiftTest.testSomeLibraryMethod" />
       <item itemvalue="JUnit.ArrayReverseTest" />
-      <item itemvalue="Application.ArrayReverse" />
+      <item itemvalue="TestNG.ArrayReverse" />
+      <item itemvalue="TestNG.ArrayShift" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ArrayReverseTest" />
-        <item itemvalue="Application.ArrayReverse" />
-        <item itemvalue="JUnit.ArrayShiftTest.testSomeLibraryMethod" />
         <item itemvalue="JUnit.ArrayShiftTest" />
+        <item itemvalue="Application.ArrayReverse" />
+        <item itemvalue="JUnit.ArrayReverseTest" />
+        <item itemvalue="JUnit.ArrayShiftTest.testSomeLibraryMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -357,9 +325,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ArrayShift - 2019.05.28 at 22h 43m 09s.xml">
-      <configuration name="ArrayShift" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="ArrayShift - 2019.05.28 at 22h 43m 17s.xml">
       <configuration name="ArrayShift" configurationId="TestNG" />
     </history-entry>
@@ -387,6 +352,9 @@
     <history-entry file="ArrayReverseTest - 2019.05.28 at 23h 32m 09s.xml">
       <configuration name="ArrayReverseTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ArrayShiftTest - 2019.05.29 at 09h 42m 32s.xml">
+      <configuration name="ArrayShiftTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -405,7 +373,7 @@
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.2496318" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.2569956" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Terminal" order="0" />
@@ -447,28 +415,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayShift.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayReverse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="135">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CodeChallenge401/ArrayShiftTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="315">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
-            <element signature="e#0#387#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayReverse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayShift.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="300">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
         </state>
       </provider>
     </entry>
