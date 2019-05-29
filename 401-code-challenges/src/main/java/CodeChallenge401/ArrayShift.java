@@ -9,6 +9,14 @@ public class ArrayShift {
         int[] result = new int[inputArray.length + 1];
         int mid = (int) (inputArray.length / 2);
 
+        if(inputArray.length == 0){
+            return new int[]{numToInsert};
+        }
+        else if( inputArray.length == 1){
+            result = new int[]{inputArray[0], numToInsert};
+            return result;
+        }
+
         for(int i = 0; i < result.length; i++){
             if(i < inputArray.length / 2){
                 result[i] = inputArray[i];

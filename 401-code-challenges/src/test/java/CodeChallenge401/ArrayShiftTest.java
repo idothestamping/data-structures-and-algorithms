@@ -20,4 +20,32 @@ public class ArrayShiftTest {
 
 
     }
+
+    @Test
+    public void shiftArray_testOddIndexArray(){
+        ArrayShift arrayShiftMethod = new ArrayShift();
+
+        int[] inputArray = new int[]{1, 3, 7, 9};
+        int[] expectedArr = new int[]{1, 3, 5, 7, 9};
+
+        assertArrayEquals("Test odd indexed array",
+                expectedArr,
+                arrayShiftMethod.arrayShift(inputArray,5));
+
+
+    }
+
+    @Test
+    public void shiftArray_singleIndexArray(){
+        ArrayShift arrayShiftMethod = new ArrayShift();
+
+        int[] inputArray = new int[]{1};
+        int[] expectedArr = new int[]{1, 3};
+
+        assertArrayEquals("Test single indexed array",
+                expectedArr,
+                arrayShiftMethod.arrayShift(inputArray,3));
+
+
+    }
 }

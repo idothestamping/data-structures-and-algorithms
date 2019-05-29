@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0d18b839-9aee-4f86-b830-31446fc833b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/ArrayShift.md" beforeDir="false" afterPath="$PROJECT_DIR$/documents/ArrayShift.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/CodeChallenge401/ArrayShift.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/CodeChallenge401/ArrayShift.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/test/CodeChallenge401/ArrayShiftTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test/CodeChallenge401/ArrayShiftTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayShift.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CodeChallenge401/ArrayShiftTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CodeChallenge401/ArrayShiftTest.java" afterDir="false" />
     </list>
@@ -26,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayShift.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="195">
+              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -35,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CodeChallenge401/ArrayShiftTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="439">
+              <caret line="38" column="43" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,7 +48,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayReverse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="127">
               <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
             </state>
           </provider>
@@ -163,7 +164,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559148268207" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559149450955" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -325,15 +326,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ArrayShift - 2019.05.28 at 22h 43m 17s.xml">
-      <configuration name="ArrayShift" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ArrayShift - 2019.05.28 at 22h 45m 38s.xml">
-      <configuration name="ArrayShift" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ArrayShiftTest_testSomeLibraryMethod - 2019.05.28 at 23h 28m 25s.xml">
-      <configuration name="ArrayShiftTest.testSomeLibraryMethod" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ArrayShiftTest_testSomeLibraryMethod - 2019.05.28 at 23h 28m 30s.xml">
       <configuration name="ArrayShiftTest.testSomeLibraryMethod" configurationId="JUnit" />
     </history-entry>
@@ -353,6 +345,15 @@
       <configuration name="ArrayReverseTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ArrayShiftTest - 2019.05.29 at 09h 42m 32s.xml">
+      <configuration name="ArrayShiftTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayShiftTest - 2019.05.29 at 09h 57m 00s.xml">
+      <configuration name="ArrayShiftTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayShiftTest - 2019.05.29 at 09h 57m 43s.xml">
+      <configuration name="ArrayShiftTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayShiftTest - 2019.05.29 at 10h 01m 07s.xml">
       <configuration name="ArrayShiftTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -417,15 +418,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayReverse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="127">
           <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CodeChallenge401/ArrayShiftTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="439">
+          <caret line="38" column="43" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -434,8 +435,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CodeChallenge401/ArrayShift.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="195">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
         </state>
       </provider>
     </entry>
