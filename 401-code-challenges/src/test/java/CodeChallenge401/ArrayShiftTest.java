@@ -25,8 +25,8 @@ public class ArrayShiftTest {
     public void shiftArray_testOddIndexArray(){
         ArrayShift arrayShiftMethod = new ArrayShift();
 
-        int[] inputArray = new int[]{1, 3, 7, 9};
-        int[] expectedArr = new int[]{1, 3, 5, 7, 9};
+        int[] inputArray = new int[]{1, 3, 7, 9, 12};
+        int[] expectedArr = new int[]{1, 3, 7, 5, 9, 12};
 
         assertArrayEquals("Test odd indexed array",
                 expectedArr,

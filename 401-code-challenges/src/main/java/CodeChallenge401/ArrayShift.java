@@ -7,7 +7,8 @@ public class ArrayShift {
     public int[] arrayShift(int[] inputArray, int numToInsert){
 
         int[] result = new int[inputArray.length + 1];
-        int mid = (int) (inputArray.length / 2);
+        int mid;
+        int odd = inputArray.length % 2;
 
         if(inputArray.length == 0){
             return new int[]{numToInsert};
@@ -17,8 +18,15 @@ public class ArrayShift {
             return result;
         }
 
+        if((inputArray.length % 2) == 0){
+            mid = (inputArray.length / 2);
+        }
+        else{
+            mid = (inputArray.length + 1) /2;
+        }
+
         for(int i = 0; i < result.length; i++){
-            if(i < inputArray.length / 2){
+            if(i < mid ){
                 result[i] = inputArray[i];
             } else if (i == mid){
                 result[mid] = numToInsert;
