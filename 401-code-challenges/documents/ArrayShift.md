@@ -13,7 +13,7 @@ Add an integer value into the middle of the index of a given int array.
 
 ## Solution (Code)
 <!-- Link to code -->
-[Solution Code]()
+[Solution Code](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/401-code-challenges/src/main/java/CodeChallenge401/ArrayShift.java)
 ## Solution (Whiteboard)
 <!-- Embedded whiteboard image -->
-![Whiteboard]()
+![Whiteboard](/assets/ArrayShift.jpg)

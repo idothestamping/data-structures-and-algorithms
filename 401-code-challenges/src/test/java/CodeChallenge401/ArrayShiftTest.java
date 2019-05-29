@@ -7,8 +7,17 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class ArrayShiftTest {
-    @Test public void testSomeLibraryMethod() {
-        ArrayShift classUnderTest = new ArrayShift();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+    @Test
+    public void shiftArray_testEvenIndexArray(){
+        ArrayShift arrayShiftMethod = new ArrayShift();
+
+        int[] inputArray = new int[]{1, 2, 4, 5};
+        int[] expectedArr = new int[]{1, 2, 3, 4, 5};
+
+        assertArrayEquals("Test even indexed array",
+                expectedArr,
+                arrayShiftMethod.arrayShift(inputArray,3));
+
+
     }
 }
