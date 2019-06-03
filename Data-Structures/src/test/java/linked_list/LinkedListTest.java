@@ -16,5 +16,8 @@ public class LinkedListTest {
         assertFalse("linked list should not be empty", list.includes());
         assertEquals("length of linked list should be 1", 1, list.length());
 
+        list.insert("doug, john, livi");
+        assertFalse("linked list should not be empty", list.includes());
+        assertEquals("length of linked list should be 1", 2, list.length());
     }
 }
