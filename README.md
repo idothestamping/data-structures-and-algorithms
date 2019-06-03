@@ -11,5 +11,5 @@ Collection of code with basic solutions on common programming problems for Javas
 3. [Binary Search](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/401-code-challenges/documents/BinarySearch.md)
 
 ### Data-Structures
-1. [Linked List](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/401-code-challenges/documents/BinarySearch.md)
+1. [Linked List](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/README.md)
 
