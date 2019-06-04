@@ -16,4 +16,4 @@ Locate key value within a given string of arrays.
 [Solution Code](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/401-code-challenges/src/main/java/CodeChallenge401/BinarySearch.java)
 ## Solution (Whiteboard)
 <!-- Embedded whiteboard image -->
-![Whiteboard](/assets/BinarySearch.jpg?raw=true "Binary Search")
+![Whiteboard](./assets/BinarySearch.jpg?raw=true "Binary Search")
