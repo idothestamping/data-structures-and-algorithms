@@ -11,5 +11,5 @@ Collection of code with basic solutions on common programming problems for Javas
 2. [Shift an Array](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/401-code-challenges/documents/ArrayShift.md)
 3. [Binary Search](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/401-code-challenges/documents/BinarySearch.md)
 
-* Data-Structures
+**Data-Structures**
 1. [Singly Linked List](https://github.com/idothestamping/data-structures-and-algorithms/blob/ll_insertions/Data-Structures/documents/LinkedList.md)
