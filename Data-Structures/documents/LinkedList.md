@@ -28,5 +28,7 @@ kth from the end - Takes a number, k, as a parameter. Return the node’s value 
 [Solution Code](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/src/main/java/linked_list/LinkedList.java)
 ## Solution (Whiteboard)
 <!-- Embedded whiteboard image -->
+### Append, InsertBefore, InserftAfter
 ![Append, InsertBefore, InserftAfter](./assets/LinkedList.jpg?raw=true "Linked List")
+### kth from the end
 ![kth from the end](./assets/ll_kth_from_end.jpg?raw=true "ll_kth_from_end")
