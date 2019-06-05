@@ -108,6 +108,35 @@ public class LinkedList {
         itr.next.next = NextNode;
     }
 
+    public String kthFromEnd(int k) {
+
+        int size = 0;
+        Node current = null;
+        while(current != null){
+            size++;
+            current = current.next;
+        }
+
+        if (k < size) {
+            System.out.println("The argument " + k + " is a negative number which is not a valid argument");
+            throw new IllegalArgumentException();
+        }
+
+        for (Node itr = this.head; itr != null; itr = itr.next) {
+
+            if (size == k) current = this.head;
+            if (size > k) current = current.next;
+            size++;
+        }
+
+        // Throw exception if loop didn't get to or past head node
+        if (current == null) {
+            System.out.println("The argument " + k + " is too large. The link only has " + size + " nodes");
+            throw new IllegalArgumentException();
+        }
+        return current.data;
+    }
+
     public static class Node {
         public Node next;
         public String data;

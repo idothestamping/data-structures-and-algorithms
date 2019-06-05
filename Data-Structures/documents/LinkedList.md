@@ -21,3 +21,11 @@ print - Looping through all nodes.
 append - We are just getting the tail to append the new node.
 insertBefore - Looping through the list to find and insert the new value before the current value.
 insertBefore - Looping through the list to find and insert the new value after the current value.
+
+## Solution (Code)
+<!-- Link to code -->
+[Solution Code](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/src/main/java/linked_list/LinkedList.java)
+## Solution (Whiteboard)
+<!-- Embedded whiteboard image -->
+![Whiteboard](./assets/LinkedList.jpg?raw=true "Linked List")
+![Whiteboard](./assets/ll_kth_from_end.jpg?raw=true "ll_kth_from_end")

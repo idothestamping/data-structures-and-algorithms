@@ -61,7 +61,7 @@ public class LinkedListTest {
         expected.add("dave");
         expected.add("john");
         expected.add("doug");
-        System.out.println(list.printList().toString());
+//        System.out.println(list.printList().toString());
         assertEquals("Insert before", expected,  list.printList());
     }
 
@@ -79,5 +79,39 @@ public class LinkedListTest {
         expected.add("john");
         System.out.println(list.printList().toString());
         assertEquals("Insert before", expected,  list.printList());
+    }
+
+    @Test public void testkthFromEndSameLength() {
+        LinkedList list = new LinkedList();
+        list.insert("doug");
+        list.insert("dave");
+        assertEquals("Should return head node value", list.kthFromEnd(1), "dave");
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testkthFromEndArgNegative() {
+        LinkedList list = new LinkedList();
+        list.kthFromEnd(-1);
+    }
+
+    @Test public void testkthFromEndLengthOne() {
+        LinkedList list = new LinkedList();
+        list.insert("doug");
+        assertEquals("Should return head node value", list.kthFromEnd(0), "doug");
+    }
+
+    @Test public void testkthFromEnd() {
+        LinkedList list = new LinkedList();
+        list.insert("dave");
+        list.insert("doug");
+        list.insert("john");
+        list.insert("jim");
+        List<String> expected = new ArrayList<>();
+        expected.add("dave");
+        expected.add("doug");
+        expected.add("john");
+        expected.add("jim");
+        System.out.println(list.printList().toString());
+        assertEquals("Should return value from node 2 from end", list.kthFromEnd(2), "john");
     }
 }
