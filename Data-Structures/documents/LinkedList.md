@@ -13,6 +13,8 @@ Within LinkedList class, include a head property. Upon instantiation, an empty L
 - append 0(1)
 - insertBefore 0(n)
 - insertAfter 0(n)
+- kth from the end 0(1)
+- mergeList 0(n)
 
 ## API
 insert - The value is inserted at the start of the list.
@@ -22,6 +24,7 @@ append - We are just getting the tail to append the new node.
 insertBefore - Looping through the list to find and insert the new value before the current value.
 insertAfter - Looping through the list to find and insert the new value after the current value.
 kth from the end - Takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list.
+mergeList -Takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
 
 ## Solution (Code)
 <!-- Link to code -->
@@ -32,3 +35,5 @@ kth from the end - Takes a number, k, as a parameter. Return the node’s value 
 ![Append, InsertBefore, InserftAfter](./assets/LinkedList.jpg?raw=true "Linked List")
 ### kth from the end
 ![kth from the end](./assets/ll_kth_from_end.jpg?raw=true "ll_kth_from_end")
+### Merge unsorted linked list
+![merge](./assets/merge.jpg?raw=true "merge")
