@@ -3,19 +3,19 @@ package linked_list;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LinkedList {
+public class LinkedListNum {
     public Node head;  // Head is first node in linked list
 
     public boolean includes(){
         return length() == 0;
     }
 
-    public void insert(String data){
+    public void insert(int data){
         Node current = new Node(data, head);
         head = current;
     }
 
-    public void append(String data){
+    public void append(int data){
         if(head == null){
             head = new Node(data);
             return;
@@ -43,10 +43,34 @@ public class LinkedList {
         return length;
     }
 
-    public List<String> printList(){
+//    public static int getLengthRecursion(Node n) {
+//        if (n == null) {
+//            return 0;
+//        } else {
+//            return 1 + getLengthRecursion(n.next);
+//        }
+//    }
+//
+//    public static int getSumLengthRecursion(Node n) {
+//        if (n == null) {
+//            return 0;
+//        } else {
+//            return n.data + getSumLengthRecursion(n.next);
+//        }
+//    }
+//
+//    public static int getMaxIntRecursion(Node n) {
+//        if (n == null) {
+//            return 0;
+//        } else {
+//            return n.data + getSumLengthRecursion(n.next);
+//        }
+//    }
+
+    public List<Integer> printList(){
 
         Node current = head;
-        List<String> result = new ArrayList<>();
+        List<Integer> result = new ArrayList<>();
 
         //Loop while current node is not null
         while(current != null){
@@ -56,7 +80,7 @@ public class LinkedList {
         return result;
     }
 
-    public void insertBefore(String val, String newVal) {
+    public void insertBefore(int val, int newVal) {
 
         Node newNode = new Node(newVal);
         Node itr = this.head;
@@ -84,7 +108,7 @@ public class LinkedList {
         newNode.next = itr;
     }
 
-    public void insertAfter(String val, String newVal) {
+    public void insertAfter(int val, int newVal) {
 
         // Throw exception if empty linked list
         if (this.head == null) {
@@ -108,7 +132,7 @@ public class LinkedList {
         itr.next.next = nextNode;
     }
 
-    public String kthFromEnd(int k) {
+    public int kthFromEnd(int k) {
 
         int size = 0;
         Node current = null;
@@ -137,7 +161,7 @@ public class LinkedList {
         return current.data;
     }
 
-    public static LinkedList mergeLists(LinkedList one, LinkedList two) {
+    public static LinkedListNum mergeLists(LinkedListNum one, LinkedListNum two) {
 
         Node list1 = one.head;
         Node list2 = two.head;
@@ -161,23 +185,42 @@ public class LinkedList {
         return one;
     }
 
+    public static int getLengthRecursion(Node n) {
+        if (n == null) {
+            return 0;
+        } else {
+            return 1 + getLengthRecursion(n.next);
+        }
+    }
+
+    public static int getSumLengthRecursion(Node n) {
+        if (n == null) {
+            return 0;
+        } else {
+            return n.data + getSumLengthRecursion(n.next);
+        }
+    }
+
+    public static int getMaxIntRecursion(Node n) {
+        if (n == null) {
+            return 0;
+        } else {
+            return n.data + getSumLengthRecursion(n.next);
+        }
+    }
+
     public static class Node {
         public Node next;
-        public String data;
+        public int data;
 
-        public Node(String data) {
+        public Node(int data) {
             this.data = data;
             this.next = null;
         }
 
-        public Node(String data, Node theNext){
+        public Node(int data, Node theNext){
             this.data = data;
             this.next = theNext;
-        }
-
-            @Override
-        public String toString() {
-            return this.data;
         }
     }
 }
