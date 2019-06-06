@@ -137,6 +137,30 @@ public class LinkedList {
         return current.data;
     }
 
+    public static LinkedList mergeLists(LinkedList one, LinkedList two) {
+
+        Node list1 = one.head;
+        Node list2 = two.head;
+        Node list1Next = null;
+        Node list2Next = null;
+
+        while (list1 != null && list2 != null) {
+            list1Next = list1.next;
+            list2Next = list2.next;
+
+            list1.next = list2;
+            list2.next = list1Next;
+
+            list1 = list1Next;
+            list2 = list2Next;
+        }
+
+        for (Node itr = one.head; itr != null; itr = itr.next) {
+            System.out.println(itr.data);
+        }
+        return one;
+    }
+
     public static class Node {
         public Node next;
         public String data;
