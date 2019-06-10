@@ -15,6 +15,7 @@ Within LinkedList class, include a head property. Upon instantiation, an empty L
 - insertAfter 0(n)
 - kth from the end 0(1)
 - mergeList 0(n)
+- stack and queues 0(n)
 
 ## API
 insert - The value is inserted at the start of the list.
