@@ -1,10 +1,10 @@
 package stacks_and_queues;
 
-public class Stack {
-    Node top;
+public class Stack<T> {
+    protected Node<T> top;
 
-    public void push(int data) {
-        Node newNode = new Node(data);
+    public void push(T data) {
+        Node<T> newNode = new Node<T>(data);
 
         if (this.top == null) {
             this.top = newNode;
@@ -15,8 +15,8 @@ public class Stack {
         }
     }
 
-    public int pop() {
-        int topData = this.top.data;
+    public T pop() {
+        T topData = this.top.data;
 
         if (this.top.next == null) {
             this.top = null;
@@ -27,7 +27,14 @@ public class Stack {
         return topData;
     }
 
-    public int peek() {
+    public T peek() {
         return this.top.data;
+    }
+
+    public T getTop(){
+        if (top != null) {
+            return top.data;
+        }
+        return null;
     }
 }

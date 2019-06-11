@@ -1,10 +1,10 @@
 package stacks_and_queues;
 
-public class Queue {
-    Node front;
+public class Queue<T> {
+    private Node<T> front;
 
-    public void enqueue(int data) {
-        Node newNode = new Node(data);
+    public void enqueue(T data) {
+        Node<T> newNode = new Node<T>(data);
 
         if (this.front == null) {
             this.front = newNode;
@@ -14,8 +14,8 @@ public class Queue {
         }
     }
 
-    public int dequeue() {
-        int frontValue = this.front.data;
+    public T dequeue() {
+        T frontValue = this.front.data;
 
         if (this.front.next == null) {
             this.front = null;
@@ -26,7 +26,7 @@ public class Queue {
         return frontValue;
     }
 
-    public int peek() {
+    public T peek() {
         return this.front.data;
     }
 }
