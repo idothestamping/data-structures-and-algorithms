@@ -13,16 +13,24 @@ public class StackTest {
     @Test
     public void testStackPush() {
         Stack  newStack = new Stack();
-        newStack.push(1);
+        newStack.push("one");
         assertEquals("Should push a new node on stack", newStack.top.data, 1);
     }
 
     @Test
     public void testStackPop() {
         Stack  newStack = new Stack();
-        newStack.push(1);
+        newStack.push("one");
         newStack.push(2);
         assertEquals("Should pop node with value 2", newStack.pop(), 2);
-        assertEquals("Node with value 1 should now be top", newStack.top.data, 1);
+        assertEquals("Node with value 1 should now be top", newStack.top.data, "one");
+    }
+
+    @Test
+    public void testGetTop() {
+        Stack  newStack = new Stack();
+        newStack.push("one");
+        newStack.push(2);
+        assertEquals("Should pop node with value 2", newStack.getTop(), 2);
     }
 }
