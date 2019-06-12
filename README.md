@@ -15,4 +15,3 @@ Collection of code with basic solutions on common programming problems for Javas
 1. [Singly Linked List](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/LinkedList.md)
 2. [Stacks and Queues](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/StackAndQueues.md)
 3. [Queues with Stacks](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/QueuesWithStacks.md)
-

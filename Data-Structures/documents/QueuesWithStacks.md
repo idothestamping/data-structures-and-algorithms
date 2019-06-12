@@ -18,4 +18,4 @@ Ensure that oldest entered element is always at the top of stack 1, so that deQu
 
 ## Solution (Whiteboard)
 <!-- Embedded whiteboard image -->
-![PseudoQueue](./assets/psudoQueue.jpg?raw=true "PseudoQueue")
+![PseudoQueue](./assets/psudoQueue.jpeg?raw=true "PseudoQueue")
