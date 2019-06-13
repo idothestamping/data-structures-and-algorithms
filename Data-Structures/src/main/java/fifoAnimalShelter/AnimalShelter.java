@@ -1,7 +1,7 @@
 package fifoAnimalShelter;
 
 public class AnimalShelter<T> {
-    Node<T> dogFront;
+    Node<T> dogFront; // instance variables
     Node<T> dogBack;
     Node<T> catFront;
     Node<T> catBack;
