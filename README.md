@@ -10,6 +10,7 @@ Collection of code with basic solutions on common programming problems for Javas
 1. [Reverse an Array](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/401-code-challenges/documents/ArrayReverse.md)
 2. [Shift an Array](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/401-code-challenges/documents/ArrayShift.md)
 3. [Binary Search](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/401-code-challenges/documents/BinarySearch.md)
+4. [MultiBracket Validation](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/401-code-challenges/documents/MultiBracketValidation.md)
 
 * Data-Structures
 1. [Singly Linked List](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/LinkedList.md)
