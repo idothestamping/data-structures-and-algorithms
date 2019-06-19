@@ -62,17 +62,6 @@ public class Tree {
         System.out.print(node.key + " ");
     }
 
-    // Wrappers over above recursive functions
-//    public void printPostorder() {
-//        printPostorder(root);
-//    }
-//    public void printInorder() {
-//        printInorder(root);
-//    }
-//    public void printPreorder() {
-//        printPreorder(root);
-//    }
-
     // Wrappers over recursive function using List
     public List<Integer> getPreorderList() {
         ArrayList<Integer> list = new ArrayList<>();
@@ -84,6 +73,7 @@ public class Tree {
         getPreOrderList(root);
     }
 
+
     public List<Integer> getPostorderList() {
         ArrayList<Integer> list = new ArrayList<>();
         getPostorderListRec(list);
@@ -93,6 +83,7 @@ public class Tree {
     public void getPostorderListRec(List<Integer> list) {
         getPostorderList(root);
     }
+
 
     public List<Integer> getInorderList() {
         ArrayList<Integer> list = new ArrayList<>();
