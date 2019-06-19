@@ -9,23 +9,13 @@ public class Tree {
     Tree() {
         root = null;
     }
-
-    public static class Node {
-        int key;
-        Node left, right;
-
-        public Node(int item) {
-            key = item;
-            left = right = null;
-        }
-    }
-
+    
     public void getPreOrderList(Node node) {
         if (node == null)
             return;
 
         /* first print data of node */
-        System.out.print(node.key + " ");
+        System.out.print(node.value + " ");
 
         /* then recur on left subtree */
         getPreOrderList(node.left);
@@ -42,7 +32,7 @@ public class Tree {
         getInorderList(node.left);
 
         /* then print the data of node */
-        System.out.print(node.key + " ");
+        System.out.print(node.value + " ");
 
         /* now recur on right child */
         getInorderList(node.right);
@@ -59,7 +49,7 @@ public class Tree {
         getPostorderList(node.right);
 
         // now deal with the node
-        System.out.print(node.key + " ");
+        System.out.print(node.value + " ");
     }
 
     // Wrappers over recursive function using List
@@ -95,8 +85,15 @@ public class Tree {
         getInorderList(root);
     }
 
+
     // Driver method
     public static void main(String[] args) {
+        //      1
+        //     /  \
+        //    2    3
+        //   /      \
+        //  4        5
+
         Tree tree = new Tree();
         tree.root = new Node(1);
         tree.root.left = new Node(2);
