@@ -1,25 +1,17 @@
 package FizzBuzzTree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class FizzBuzzTree {
     Node node;
 
-    public class Node {
-        String value;
-        Node left;
-        Node right;
-
-        Node(String value) {
-            this.value = value;
-            left = null;
-            right = null;
-        }
-    }
 
     public void add(String value) {
         node = addRecursive(node, value);
     }
 
-    private Node addRecursive(Node current, String  value) {
+    private Node addRecursive(Node current, String value) {
 
         if (current == null) return new Node(value);
 
@@ -48,14 +40,51 @@ public class FizzBuzzTree {
         }
         return node;
     }
+
+    public Node breadthTraverse(Node root) {
+
+        Queue<Node> ll = new LinkedList<>();
+
+        ll.add(root);
+
+        while (!ll.isEmpty()) {
+            Node node = ll.remove();
+            System.out.println(node.value);
+
+            if (node.left != null) {
+                ll.add(node.left);
+            }
+            if (node.right != null) {
+                ll.add(node.right);
+            }
+        }
+        return node;
+    }
+
     public static void main(String[] args) {
         FizzBuzzTree tree = new FizzBuzzTree();
-        tree.add("15"); // FizzBuzz
-        tree.add("5");  // Buzz
-        tree.add("3"); // Fizz
-        FizzBuzzTree.Node node = tree.fizz(tree.node);
-        System.out.println(node.value); // FizzBuzz
-        System.out.println(node.left.value); // Buzz
-        System.out.println(node.left.left.value); // Fizz
+
+        // FizzBuzz Tree:
+//        tree.add("15"); // FizzBuzz
+//        tree.add("5");  // Buzz
+//        tree.add("3"); // Fizz
+
+//        Node node = tree.fizz(tree.node);
+//        System.out.println(node.value); // FizzBuzz
+//        System.out.println(node.left.value); // Buzz
+//        System.out.println(node.left.left.value); // Fizz
+
+
+        // Breadth-first Traversal:
+        tree.add("10");
+        tree.add("5");
+        tree.add("2");
+        tree.add("6");
+        tree.add("15");
+        tree.add("12");
+        tree.add("25");
+
+        Node node = tree.breadthTraverse(tree.node);
+        System.out.println(node.value);
     }
 }

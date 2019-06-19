@@ -20,7 +20,9 @@ Java program for different tree traversals
 * If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
 * Return the tree with its new values.
 
-For explicitly-typed languages: Ensure your node values are of type Object, to hold either strings or integers.
+**Breadth-first Traversal**
+* Breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach; print every visited node’s value.
+
 
 ## Approach & Efficiency
 * Time/Space:
@@ -32,7 +34,11 @@ For explicitly-typed languages: Ensure your node values are of type Object, to h
 * inOrder() Given a binary tree, print its nodes in inorder.
 * postOrder() Given a binary tree, print its nodes according to the "bottom-up" postorder traversal.
 
+**FizzBuzzTree**
+* breadthTraverse() Given a binary tree, print its nodes in order of height.
+
 ## Solution (Code)
 <!-- Link to code -->
 * [Tree](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/src/main/java/tree/Tree.java)
 * [FizzBuzzTree](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/src/main/java/FizzBuzzTree/FizzBuzzTree.java)
+    * [Breadth-first Traversal Method](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/src/main/java/FizzBuzzTree/FizzBuzzTree.java)
