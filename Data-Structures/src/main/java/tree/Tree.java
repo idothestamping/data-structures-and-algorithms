@@ -85,7 +85,6 @@ public class Tree {
         getInorderList(root);
     }
 
-
     // Driver method
     public static void main(String[] args) {
         //      1
