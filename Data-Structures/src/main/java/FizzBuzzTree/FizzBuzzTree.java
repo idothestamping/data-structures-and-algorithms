@@ -61,6 +61,15 @@ public class FizzBuzzTree {
         return node;
     }
 
+    public int findmaximumvalue(Node node){
+        int cur = -9999;
+        if (node ==null)return cur;
+        cur = Integer.parseInt(node.value);
+        cur = findmaximumvalue(node.left)>cur?findmaximumvalue(node.left):cur;
+        cur = findmaximumvalue(node.right)>cur?findmaximumvalue(node.right):cur;
+        return cur;
+    }
+
     public static void main(String[] args) {
         FizzBuzzTree tree = new FizzBuzzTree();
 
@@ -68,7 +77,6 @@ public class FizzBuzzTree {
 //        tree.add("15"); // FizzBuzz
 //        tree.add("5");  // Buzz
 //        tree.add("3"); // Fizz
-
 //        Node node = tree.fizz(tree.node);
 //        System.out.println(node.value); // FizzBuzz
 //        System.out.println(node.left.value); // Buzz
@@ -83,8 +91,11 @@ public class FizzBuzzTree {
         tree.add("15");
         tree.add("12");
         tree.add("25");
+//        Node node = tree.breadthTraverse(tree.node);
+//        System.out.println(node.value);
 
-        Node node = tree.breadthTraverse(tree.node);
-        System.out.println(node.value);
+        // Find Max value: result is '25'
+        int a = tree.findmaximumvalue(tree.node);
+        System.out.println(a);
     }
 }
