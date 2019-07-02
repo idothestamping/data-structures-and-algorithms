@@ -12,6 +12,7 @@ As a result of completing this Lecture, students will:
 Ref: https://www.geeksforgeeks.org/merge-sort/
 ![MergeSort Diagram](https://www.geeksforgeeks.org/wp-content/uploads/Merge-Sort-Tutorial.png)
 
+### Animated Diagram
 ![MergeSort Diagram](https://i.stack.imgur.com/YlHqG.gif)
 
 ## Algorithm
