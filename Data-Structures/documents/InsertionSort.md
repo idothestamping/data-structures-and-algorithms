@@ -45,3 +45,6 @@ Read
 Bookmark
 * [wiki](https://en.wikipedia.org/wiki/Insertion_sort)
 * [Hackerearth](https://www.hackerearth.com/practice/algorithms/sorting/insertion-sort/tutorial/)
+
+## Code
+* [InsertionSort](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/src/main/java/SortingAlgo/InsertionSort.java)
