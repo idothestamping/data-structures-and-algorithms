@@ -23,3 +23,5 @@ Collection of code with basic solutions on common programming problems for Javas
 * Sorting-Algo - Psudo Lecture
 1. [Insertion Sort](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/InsertionSort.md)
 2. [Merge Sort](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/MergeSort.md)
+3. [Quick Sort](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/QuickSort.md)
+

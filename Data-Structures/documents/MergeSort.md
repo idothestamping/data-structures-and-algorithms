@@ -16,9 +16,8 @@ Ref: https://www.geeksforgeeks.org/merge-sort/
 ![MergeSort Diagram](https://i.stack.imgur.com/YlHqG.gif)
 
 ## Algorithm
-- Worst case performance O(n*log(n))
-- Best case performance O(n)
-- Average case performance O(n)
+- Worst case performance: O(n log(n))
+- Best case performance: Ω(n log(n))
 
 ## Pseudocode
 
