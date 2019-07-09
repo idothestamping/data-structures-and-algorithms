@@ -1,4 +1,4 @@
-package FizzBuzzTree;
+package fizzBuzzTree;
 
 import java.util.LinkedList;
 import java.util.Queue;

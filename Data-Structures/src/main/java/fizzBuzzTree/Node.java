@@ -1,4 +1,4 @@
-package FizzBuzzTree;
+package fizzBuzzTree;
 
 public class Node {
     String value;

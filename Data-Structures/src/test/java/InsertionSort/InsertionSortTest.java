@@ -1,6 +1,6 @@
 package InsertionSort;
 
-import SortingAlgo.InsertionSort;
+import sortingAlgo.InsertionSort;
 import org.junit.Test;
 
 import java.util.Arrays;
