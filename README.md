@@ -19,6 +19,7 @@ Collection of code with basic solutions on common programming problems for Javas
 3. [Queues with Stacks](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/QueuesWithStacks.md)
 4. [First-in, First out Animal Shelter](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/FifoAnimalShelter.md)
 5. [Binary Tree and BST Implementation](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/Tree.md)
+6. [Hash Table](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/HashTable.md)
 
 * Sorting-Algo - Psudo Lecture
 1. [Insertion Sort](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/InsertionSort.md)
