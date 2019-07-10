@@ -16,7 +16,6 @@ Stacks and queues are special cases of the idea of a collection. Each is charact
 * peek() that does not take an argument and returns the value of the node located on top of the stack, without removing it from the stack.
 
 ## Solution (Code)
-<!-- Link to code -->
 * [Node](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/src/main/java/stacks_and_queues/Node.java)
 * [Stack](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/src/main/java/stacks_and_queues/Stack.java)
 * [Queue](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/src/main/java/stacks_and_queues/Queue.java)
