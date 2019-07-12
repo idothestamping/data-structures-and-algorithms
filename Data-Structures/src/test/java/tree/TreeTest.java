@@ -1,5 +1,7 @@
 package tree;
 
+import binaryTree.BinaryTree;
+import binaryTree.Tree;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -29,16 +31,5 @@ public class TreeTest {
 
     @Test
     public void printPreorder1() {
-    }
-
-    @Test
-    public void main() {
-        Tree tree = new Tree();
-        tree.root = new Node(1);
-        tree.root.left = new Node(2);
-        tree.root.right = new Node(3);
-        tree.root.left.left = new Node(4);
-        tree.root.left.right = new Node(5);
-        assertEquals("Preorder traversal of binary tree is", "1 2 4 5 3", tree.getPreorderList());
     }
 }

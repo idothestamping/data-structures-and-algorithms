@@ -1,4 +1,4 @@
-package tree;
+package binaryTree;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -83,30 +83,5 @@ public class Tree {
 
     public void getInorderListRec(List<Integer> list) {
         getInorderList(root);
-    }
-
-    // Driver method
-    public static void main(String[] args) {
-        //      1
-        //     /  \
-        //    2    3
-        //   /      \
-        //  4        5
-
-        Tree tree = new Tree();
-        tree.root = new Node(1);
-        tree.root.left = new Node(2);
-        tree.root.right = new Node(3);
-        tree.root.left.left = new Node(4);
-        tree.root.left.right = new Node(5);
-
-        System.out.println("Preorder traversal of binary tree is ");
-        tree.getPreorderList();
-
-        System.out.println("\nInorder traversal of binary tree is ");
-        tree.getInorderList();
-
-        System.out.println("\nPostorder traversal of binary tree is ");
-        tree.getPostorderList();
     }
 }
