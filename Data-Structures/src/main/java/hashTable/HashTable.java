@@ -29,8 +29,6 @@ public class HashTable {
             map[hashkey] = new Node(key,value);
             map[hashkey].setNextNode(temp);
         }
-
-
     }
 
     public String get(String key){
