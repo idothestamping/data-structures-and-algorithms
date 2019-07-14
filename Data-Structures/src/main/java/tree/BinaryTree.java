@@ -51,7 +51,7 @@ public class BinaryTree {
         return current;
     }
 
-    public Node fizzbuzzMethod(Node node) {
+    public Node fizzBuzzTree(Node node) {
 
         if (node != null) {
             if (Integer.parseInt(node.value) % 15 == 0) {
@@ -61,8 +61,8 @@ public class BinaryTree {
             } else if (Integer.parseInt(node.value) % 3 == 0) {
                 node.value = "Fizz";
             }
-            fizzbuzzMethod(node.left);
-            fizzbuzzMethod(node.right);
+            fizzBuzzTree(node.left);
+            fizzBuzzTree(node.right);
         }
         return node;
     }

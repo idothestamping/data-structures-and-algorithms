@@ -1,40 +1,43 @@
 package stacks_and_queues;
 
 public class Stack<T> {
-    protected Node<T> top;
 
-    public void push(T data) {
-        Node<T> newNode = new Node<T>(data);
+    private Node<T> top;
+    private Node<T> temp;
 
-        if (this.top == null) {
-            this.top = newNode;
-            newNode.next = null;
-        } else {
-            newNode.next = this.top;
-            this.top = newNode;
+    public Stack(){
+
+    }
+
+    public void push(T value){
+
+        if(top == null){
+            top = new Node(value);
+        }
+        else {
+            temp = top;
+            top = new Node(value);
+            top.next = temp;
         }
     }
 
-    public T pop() {
-        T topData = this.top.data;
-
-        if (this.top.next == null) {
-            this.top = null;
-
-        } else {
-            this.top = this.top.next;
+    public T pop(){
+        if(top == null){
+            throw new NullPointerException("Can't peek at an empty stack. This stack is empty");
         }
-        return topData;
+        else{
+            temp = top;
+            top = top.next;
+            return temp.data;
+        }
     }
 
-    public T peek() {
-        return this.top.data;
-    }
+    public T peek(){
 
-    public T getTop(){
-        if (top != null) {
-            return top.data;
+        //if empty
+        if(top == null){
+            throw new NullPointerException("Can't peek at an empty stack. This stack is empty");
         }
-        return null;
+        return top.data;
     }
 }
