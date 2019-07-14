@@ -1,10 +1,4 @@
-package binaryTree;
-
-import binaryTree.BinaryTree;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
+package tree;
 
 public class TreeIntersection {
 //

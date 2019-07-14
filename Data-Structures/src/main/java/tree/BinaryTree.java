@@ -1,4 +1,4 @@
-package binaryTree;
+package tree;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -6,19 +6,21 @@ import java.util.List;
 import java.util.Queue;
 
 public class BinaryTree {
-    protected Node node;
     protected Node root;
 
-    public Node getRoot() {
+    public Node getNode() {
         return root;
     }
 
-    public void setRoot(Node root) {
+    public void setNode(Node root) {
         this.root = root;
     }
 
     public void add(String value) {
-        node = addRecursive(node, value);
+        root = addRecursive(root, value);
+    }
+    public void add(int data) {
+        root = addRecursive(root, data);
     }
 
     private Node addRecursive(Node current, String value) {
@@ -35,7 +37,21 @@ public class BinaryTree {
         return current;
     }
 
-    public Node fizz(Node node) {
+    private Node addRecursive(Node current, int data) {
+
+        if (current == null) return new Node(data);
+
+        if (data < current.data) {
+            current.left = addRecursive(current.left, data);
+        } else if (data > current.data) {
+            current.right = addRecursive(current.right, data);
+        } else {
+            return current;
+        }
+        return current;
+    }
+
+    public Node fizzbuzzMethod(Node node) {
 
         if (node != null) {
             if (Integer.parseInt(node.value) % 15 == 0) {
@@ -45,8 +61,8 @@ public class BinaryTree {
             } else if (Integer.parseInt(node.value) % 3 == 0) {
                 node.value = "Fizz";
             }
-            fizz(node.left);
-            fizz(node.right);
+            fizzbuzzMethod(node.left);
+            fizzbuzzMethod(node.right);
         }
         return node;
     }
@@ -55,7 +71,7 @@ public class BinaryTree {
 
         Queue<Node> ll = new LinkedList<>();
 
-        ll.add(node);
+        ll.add(root);
 
         while (!ll.isEmpty()) {
             Node node = ll.remove();
@@ -68,15 +84,16 @@ public class BinaryTree {
                 ll.add(node.right);
             }
         }
-        return node;
+        return root;
     }
 
-    public int findmaximumvalue(Node node){
+    public int findmaximumvalue(Node root){
         int cur = -9999;
-        if (node ==null)return cur;
-        cur = Integer.parseInt(node.value);
-        cur = findmaximumvalue(node.left)>cur?findmaximumvalue(node.left):cur;
-        cur = findmaximumvalue(node.right)>cur?findmaximumvalue(node.right):cur;
+        if (root == null)
+            return cur;
+        cur = Integer.parseInt(root.value);
+        cur = findmaximumvalue(root.left) > cur ? findmaximumvalue(root.left) : cur;
+        cur = findmaximumvalue(root.right) > cur ? findmaximumvalue(root.right) : cur;
         return cur;
     }
 
@@ -85,7 +102,7 @@ public class BinaryTree {
             return;
 
         /* first print data of node */
-        System.out.print(node.value + " ");
+        System.out.print(node.data + " ");
 
         /* then recur on left subtree */
         getPreOrderList(node.left);
@@ -94,65 +111,64 @@ public class BinaryTree {
         getPreOrderList(node.right);
     }
 
-    public void getInorderList(Node node) {
+    public void getInOrderList(Node node) {
         if (node == null)
             return;
 
         /* first recur on left child */
-        getInorderList(node.left);
+        getInOrderList(node.left);
 
         /* then print the data of node */
-        System.out.print(node.value + " ");
+        System.out.print(node.data + " ");
 
         /* now recur on right child */
-        getInorderList(node.right);
+        getInOrderList(node.right);
     }
 
-    public void getPostorderList(Node node) {
+    public void getPostOrderList(Node node) {
         if (node == null)
             return;
 
         // first recur on left subtree
-        getPostorderList(node.left);
+        getPostOrderList(node.left);
 
         // then recur on right subtree
-        getPostorderList(node.right);
+        getPostOrderList(node.right);
 
         // now deal with the node
-        System.out.print(node.value + " ");
+        System.out.print(node.data + " ");
     }
 
     // Wrappers over recursive function using List
     public List<Integer> getPreorderList() {
         ArrayList<Integer> list = new ArrayList<>();
-        getPreorderListRec(list);
+        getPreOrderListRec(list);
         return list;
     }
 
-    public void getPreorderListRec(List<Integer> list) {
-        getPreOrderList(node);
+    public void getPreOrderListRec(List<Integer> list) {
+        getPreOrderList(root);
     }
 
 
-    public List<Integer> getPostorderList() {
+    public List<Integer> getInOrderList() {
         ArrayList<Integer> list = new ArrayList<>();
-        getPostorderListRec(list);
+        getInOrderListRec(list);
         return list;
     }
 
-    public void getPostorderListRec(List<Integer> list) {
-        getPostorderList(node);
+    public void getInOrderListRec(List<Integer> list) {
+        getInOrderList(root);
     }
 
 
-    public List<Integer> getInorderList() {
+    public List<Integer> getPostOrderList() {
         ArrayList<Integer> list = new ArrayList<>();
-        getInorderListRec(list);
+        getPostOrderListRec(list);
         return list;
     }
 
-    public void getInorderListRec(List<Integer> list) {
-        getInorderList(node);
+    public void getPostOrderListRec(List<Integer> list) {
+        getPostOrderList(root);
     }
-
 }
