@@ -1,8 +1,5 @@
 package tree;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -11,10 +8,10 @@ public class Main {
         tree.add("15"); // FizzBuzz
         tree.add("5");  // Buzz
         tree.add("3"); // Fizz
-        Node fizzbuzztree = tree.fizzbuzzMethod(tree.root);
-        System.out.println(fizzbuzztree.value); // FizzBuzz
-        System.out.println(fizzbuzztree.left.value); // Buzz
-        System.out.println(fizzbuzztree.left.left.value); // Fizz
+        Node fbt = tree.fizzBuzzTree(tree.root);
+        System.out.println(fbt.value); // FizzBuzz
+        System.out.println(fbt.left.value); // Buzz
+        System.out.println(fbt.left.left.value); // Fizz
 
 //        2. Breadth-first Traversal:
         BinaryTree tree2 = new BinaryTree();
@@ -49,12 +46,12 @@ public class Main {
         tree3.root.left.right = new Node(5);
 
         System.out.println("\nPreorder traversal of binary tree is ");
-        tree3.getPreorderList();
+        tree3.preorder();
 
         System.out.println("\nInorder traversal of binary tree is ");
-        tree3.getInOrderList();
+        tree3.inorder();
 
         System.out.println("\nPostorder traversal of binary tree is ");
-        tree3.getPostOrderList();
+        tree3.postorder();
     }
 }

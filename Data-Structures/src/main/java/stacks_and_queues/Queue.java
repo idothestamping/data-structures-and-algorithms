@@ -1,32 +1,44 @@
 package stacks_and_queues;
 
 public class Queue<T> {
-    private Node<T> front;
 
-    public void enqueue(T data) {
-        Node<T> newNode = new Node<T>(data);
+    public Node<T> front;
+    public Node<T> back;
+    public Node<T> temp;
 
-        if (this.front == null) {
-            this.front = newNode;
-            newNode.next = null;
-        } else {
-            this.front.next = newNode;
+    public Queue(){
+    }
+
+    public void enqueue(T value){
+        Node<T> newNode = new Node(value);
+        temp = newNode;
+        if(back == null){
+            front = temp;
+            back = temp;
+        }
+        else{
+            back.next = temp;
+            back = temp;
         }
     }
 
-    public T dequeue() {
-        T frontValue = this.front.data;
-
-        if (this.front.next == null) {
-            this.front = null;
-        } else {
-
-            this.front = this.front.next;
+    public T dequeue(){
+        if(front == null){
+            throw new NullPointerException("Queue is empty");
         }
-        return frontValue;
+        else{
+            temp = front;
+            front = front.next;
+            return temp.data;
+        }
     }
 
-    public T peek() {
-        return this.front.data;
+    public T peek(){
+        if(front == null){
+            throw new NullPointerException("Queue is empty");
+        }
+        else{
+            return front.data;
+        }
     }
 }

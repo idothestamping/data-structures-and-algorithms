@@ -1,26 +1,30 @@
 package tree;
 
+import java.util.HashSet;
+
 public class TreeIntersection {
-//
-//    public static HashSet treeIntersection(BinaryTree tree1, BinaryTree tree2){
-//        HashSet common = new HashSet <>();
-//        if(tree1.getRoot() != null && tree2.getRoot() != null){
-//            //pre order of first tree
-//            Object[] arr1 = tree1.getPreOrderList(tree1.getRoot(), new ArrayList());
-//            Integer[] vals1 = Arrays.asList(arr1).toArray(new Integer[arr1.length]);
-//
-//            //pre order of second tree
-//            Object[] arr2 = tree2.preOrder(tree2.getRoot(), new ArrayList());
-//            Integer[] vals2 = Arrays.asList(arr2).toArray(new Integer[arr2.length]);
-//
-//            // find common values of both lists
-//            for(Integer num : vals1){
-//                if(Arrays.asList(vals2).contains(num)){
-//                    common.add(num);
-//                }
-//            }
-//        }
-//
-//        return common;
-//    }
+
+    public static HashSet treeIntersection(BinaryTree tree1, BinaryTree tree2){
+
+        HashSet intersection = new HashSet();
+
+        HashSet set1 = setTreeToHash(tree1);
+        HashSet set2 = setTreeToHash(tree2);
+
+        for(Object n : set1){
+            if(set2.contains(n)){
+                intersection.add(n);
+            }
+        }
+        return intersection;
+    }
+
+    public static HashSet setTreeToHash(BinaryTree bt){
+        HashSet nodeSet = new HashSet();
+
+        for(Object n : bt.preorder()){
+            nodeSet.add(n);
+        }
+        return nodeSet;
+    }
 }

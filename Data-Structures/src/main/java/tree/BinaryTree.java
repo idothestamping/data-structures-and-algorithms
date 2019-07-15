@@ -51,7 +51,7 @@ public class BinaryTree {
         return current;
     }
 
-    public Node fizzbuzzMethod(Node node) {
+    public Node fizzBuzzTree(Node node) {
 
         if (node != null) {
             if (Integer.parseInt(node.value) % 15 == 0) {
@@ -61,8 +61,8 @@ public class BinaryTree {
             } else if (Integer.parseInt(node.value) % 3 == 0) {
                 node.value = "Fizz";
             }
-            fizzbuzzMethod(node.left);
-            fizzbuzzMethod(node.right);
+            fizzBuzzTree(node.left);
+            fizzBuzzTree(node.right);
         }
         return node;
     }
@@ -97,78 +97,48 @@ public class BinaryTree {
         return cur;
     }
 
-    public void getPreOrderList(Node node) {
-        if (node == null)
-            return;
-
-        /* first print data of node */
-        System.out.print(node.data + " ");
-
-        /* then recur on left subtree */
-        getPreOrderList(node.left);
-
-        /* now recur on right subtree */
-        getPreOrderList(node.right);
+    public List<Integer> preorder(){
+        List<Integer> list = new ArrayList<>();
+        return preorderHelper(list, this.root);
     }
+    public List<Integer> preorderHelper(List list, Node node) {
+        if (node != null) {
+//            System.out.print(" " + node.getData());
+            list.add(node.getData());
 
-    public void getInOrderList(Node node) {
-        if (node == null)
-            return;
+            preorderHelper(list, node.getLeft());
 
-        /* first recur on left child */
-        getInOrderList(node.left);
-
-        /* then print the data of node */
-        System.out.print(node.data + " ");
-
-        /* now recur on right child */
-        getInOrderList(node.right);
-    }
-
-    public void getPostOrderList(Node node) {
-        if (node == null)
-            return;
-
-        // first recur on left subtree
-        getPostOrderList(node.left);
-
-        // then recur on right subtree
-        getPostOrderList(node.right);
-
-        // now deal with the node
-        System.out.print(node.data + " ");
-    }
-
-    // Wrappers over recursive function using List
-    public List<Integer> getPreorderList() {
-        ArrayList<Integer> list = new ArrayList<>();
-        getPreOrderListRec(list);
+            preorderHelper(list, node.getRight());
+        }
         return list;
     }
 
-    public void getPreOrderListRec(List<Integer> list) {
-        getPreOrderList(root);
+    public List<Integer> inorder(){
+        List<Integer> list = new ArrayList<>();
+        return inorderHelper(list, this.root);
     }
 
-
-    public List<Integer> getInOrderList() {
-        ArrayList<Integer> list = new ArrayList<>();
-        getInOrderListRec(list);
+    public List<Integer> inorderHelper(List<Integer> list, Node node){
+        if (node != null) {
+            inorderHelper(list, node.getLeft());
+            list.add(node.getData());
+            inorderHelper(list, node.getRight());
+        }
         return list;
     }
 
-    public void getInOrderListRec(List<Integer> list) {
-        getInOrderList(root);
+    public List postorder(){
+        List<Integer> list = new ArrayList<>();
+        return postorderHelper(list, this.root);
     }
 
 
-    public List<Integer> getPostOrderList() {
-        ArrayList<Integer> list = new ArrayList<>();
-        getPostOrderListRec(list);
+    public List<Integer> postorderHelper(List list, Node node) {
+        if (node != null) {
+            postorderHelper(list, node.getLeft());
+            postorderHelper(list, node.getRight());
+            list.add(node.getData());
+        }
         return list;
-    }
-
-    public void getPostOrderListRec(List<Integer> list) {
-        getPostOrderList(root);
     }
 }
