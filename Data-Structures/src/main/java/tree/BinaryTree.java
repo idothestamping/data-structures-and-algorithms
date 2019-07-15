@@ -103,11 +103,9 @@ public class BinaryTree {
     }
     public List<Integer> preorderHelper(List list, Node node) {
         if (node != null) {
-//            System.out.print(" " + node.getData());
+            System.out.print(" " + node.getData());
             list.add(node.getData());
-
             preorderHelper(list, node.getLeft());
-
             preorderHelper(list, node.getRight());
         }
         return list;
@@ -121,6 +119,7 @@ public class BinaryTree {
     public List<Integer> inorderHelper(List<Integer> list, Node node){
         if (node != null) {
             inorderHelper(list, node.getLeft());
+            System.out.print(" " + node.getData());
             list.add(node.getData());
             inorderHelper(list, node.getRight());
         }
@@ -138,6 +137,7 @@ public class BinaryTree {
             postorderHelper(list, node.getLeft());
             postorderHelper(list, node.getRight());
             list.add(node.getData());
+            System.out.print(" " + node.getData());
         }
         return list;
     }
