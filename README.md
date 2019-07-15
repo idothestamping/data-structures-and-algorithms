@@ -11,7 +11,7 @@ Collection of code with basic solutions on common programming problems for Javas
 * [Array Reverse](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/401-code-challenges/documents/ArrayReverse.md)
 * [Arry Shift](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/401-code-challenges/documents/ArrayShift.md)
 * [Binary Search](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/401-code-challenges/documents/BinarySearch.md)
-* [MultiBracket Validation](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/401-code-challenges/documents/MultiBracketValidation.md)
+* [MultiBracket Validation](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/MultiBracketValidation.md)
 
 ## Linked List
 * [Singly Linked List](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/LinkedList.md)
@@ -31,3 +31,4 @@ Collection of code with basic solutions on common programming problems for Javas
 
 ## Hash Table
 * [Hash Table](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/HashTable.md)
+* [Tree Intersection](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/TreeIntersection.md)
