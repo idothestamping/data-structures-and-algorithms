@@ -1,4 +1,6 @@
-package tree;
+package hashTable;
+
+import tree.BinaryTree;
 
 import java.util.HashSet;
 
