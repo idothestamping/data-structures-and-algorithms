@@ -5,11 +5,10 @@ This read me contains information about code challenge: Repeated word
 Find the first repeated word in a string.
 
 ## Approach & Efficiency
-  * Time: O(n)
-  * Space: O(n)
+Time | Space
+--- | ---
+O(1) | O(1)
 
-## API
-* findRepeatedWord(String str)
   
 ## Solution (Code)
 * [Repeated Word](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/src/main/java/hashTable/RepeatedWord.java)

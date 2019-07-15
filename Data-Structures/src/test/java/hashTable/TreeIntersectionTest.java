@@ -1,10 +1,15 @@
-package tree;
+package hashTable;
+
+import hashTable.TreeIntersection;
+import org.junit.Test;
+import tree.BinaryTree;
 
 import java.util.HashSet;
 
 import static org.junit.Assert.*;
 
 public class TreeIntersectionTest {
+    @Test
     public void test_AllCommonNodes() {
         BinaryTree bt = new BinaryTree();
         bt.add(30);
@@ -21,7 +26,6 @@ public class TreeIntersectionTest {
         bt2.add(100);
         bt2.add(150);
         bt2.add(800);
-
 
         HashSet actual = new HashSet();
         actual.add(800);

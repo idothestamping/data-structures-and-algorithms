@@ -1,4 +1,4 @@
-package multiBracketValidation;
+package stacks_and_queues;
 
 import java.util.Stack;
 
