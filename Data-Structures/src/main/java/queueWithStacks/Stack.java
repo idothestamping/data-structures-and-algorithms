@@ -1,15 +1,16 @@
-package stacks_and_queues;
+package queueWithStacks;
 
-public class Stack<T> {
 
-    protected Node<T> top;
-    protected Node<T> temp;
+public class Stack {
+
+    protected Node top;
+    protected Node temp;
 
     public Stack(){
 
     }
 
-    public void push(T value){
+    public void push(int value){
 
         if(top == null){
             top = new Node(value);
@@ -21,7 +22,7 @@ public class Stack<T> {
         }
     }
 
-    public T pop(){
+    public int pop(){
         if(top == null){
             throw new NullPointerException("Can't peek at an empty stack. This stack is empty");
         }
@@ -32,7 +33,7 @@ public class Stack<T> {
         }
     }
 
-    public T peek(){
+    public int peek(){
 
         //if empty
         if(top == null){

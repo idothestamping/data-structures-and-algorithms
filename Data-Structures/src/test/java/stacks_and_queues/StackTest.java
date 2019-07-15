@@ -31,6 +31,6 @@ public class StackTest {
         Stack  newStack = new Stack();
         newStack.push("one");
         newStack.push(2);
-        assertEquals("Should pop node with value 2", newStack.getTop(), 2);
+        assertEquals("Should pop node with value 2", newStack.top.data, 2);
     }
 }

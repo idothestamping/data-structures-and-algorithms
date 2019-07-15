@@ -46,12 +46,12 @@ public class Main {
         tree3.root.left.right = new Node(5);
 
         System.out.println("\nPreorder traversal of binary tree is ");
-        tree3.getPreorderList();
+        tree3.preorder();
 
         System.out.println("\nInorder traversal of binary tree is ");
-        tree3.getInOrderList();
+        tree3.inorder();
 
         System.out.println("\nPostorder traversal of binary tree is ");
-        tree3.getPostOrderList();
+        tree3.postorder();
     }
 }
