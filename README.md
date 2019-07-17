@@ -33,3 +33,6 @@ Collection of code with basic solutions on common programming problems for Javas
 * [Hash Table](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/HashTable.md)
 * [Tree Intersection](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/TreeIntersection.md)
 * [Repeated Word](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/ReapeatedWord.md)
+
+## Graphs
+* [Hash Table](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/Graph.md)
