@@ -34,6 +34,7 @@ public class BinaryTree {
         } else {
             return current;
         }
+
         return current;
     }
 
@@ -48,6 +49,7 @@ public class BinaryTree {
         } else {
             return current;
         }
+
         return current;
     }
 
