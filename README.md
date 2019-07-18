@@ -36,3 +36,4 @@ Collection of code with basic solutions on common programming problems for Javas
 
 ## Graphs
 * [Hash Table](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/Graph.md)
+* [Breadth First Search](https://github.com/idothestamping/data-structures-and-algorithms/blob/master/Data-Structures/documents/BreadthFirstSearch.md)
