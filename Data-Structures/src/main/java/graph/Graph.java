@@ -25,11 +25,13 @@ public class Graph<T> {
         return node;
     }
 
-    public void addEdge(Node<T> node, Node<T> target){
+    public boolean addEdge(Node<T> node, Node<T> target){
         if(this.vertices.contains(node) && this.vertices.contains(target)){
             this.vertices.add(node);
             this.vertices.add(target);
+            return true;
         }
+        return false;
     }
 
     public HashSet<Node<T>>getNodes(){
@@ -41,8 +43,10 @@ public class Graph<T> {
     }
 
     public int getSize(){
+
         return this.vertices.size();
     }
+
     public LinkedList<Node> breadthFirstTraversal(Node<T> start){
         LinkedList<Node> result = new LinkedList<>();
         LinkedList<Node> visited = new LinkedList<>();

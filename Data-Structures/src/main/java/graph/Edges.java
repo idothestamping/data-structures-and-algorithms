@@ -2,8 +2,8 @@ package graph;
 
 public class Edges<T> {
     private int weight;
-    private Node source;
-    private Node target;
+    private Node<T> source;
+    private Node<T> target;
 
     public int getWeight() {
         return weight;
@@ -29,7 +29,7 @@ public class Edges<T> {
         this.target = target;
     }
 
-    public Edges(Node source, Node target, int weight){
+    public Edges(Node<T> source, Node<T> target, int weight){
         this.source = source;
         this.target = target;
         this.weight = weight;

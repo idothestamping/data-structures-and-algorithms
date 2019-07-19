@@ -31,6 +31,17 @@ public class GraphTest {
         assertTrue(graph.getVertices().size() > 0);
     }
 
+    @Test public void addEdge() {
+        Graph graph = new Graph();
+        Node cat = graph.addNode("cat");
+        Node dog = graph.addNode("dog");
+        Node hamster = graph.addNode("hamster");
+
+        assertTrue("Should be true", graph.addEdge(cat, dog));
+        assertTrue("Should be true", graph.addEdge(cat, hamster));
+
+    }
+
     @Test public void testBreadthFirst(){
         Graph graph = new Graph();
         Node pandora = new Node("pandora");
