@@ -59,4 +59,22 @@ public class GraphTest {
 
         assertEquals("Should return", expected, graph.breadthFirstSearch(cat));
     }
+
+    @Test
+    public void test_dfs(){
+        Graph graph = new Graph();
+        Node cat = graph.addNode("cat");
+        Node dog = graph.addNode("dog");
+        Node hamster = graph.addNode("hamster");
+
+        cat.addNeighbor(dog, 20);
+        cat.addNeighbor(hamster, 40);
+
+        LinkedList<Node> expected = new LinkedList<>();
+        expected.add(cat);
+        expected.add(dog);
+        expected.add(hamster);
+
+        assertEquals("Should return", expected, graph.depthFirstSearch(cat));
+    }
 }
