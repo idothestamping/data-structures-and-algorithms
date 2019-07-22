@@ -25,46 +25,85 @@ public class Graph<T> {
         return node;
     }
 
-    public void addEdge(Node<T> node, Node<T> target){
+    public boolean addEdge(Node<T> node, Node<T> target){
         if(this.vertices.contains(node) && this.vertices.contains(target)){
             this.vertices.add(node);
             this.vertices.add(target);
+            return true;
         }
+        return false;
+    }
+
+    public void getEdges(String[] input){
+
     }
 
     public HashSet<Node<T>>getNodes(){
         return this.vertices;
     }
 
-    public HashSet<Node> getNeighbors(Node<T> node){
-        return node.getNeighbors();
+    public HashSet<Edges> getNeighbors(Node<T> node){
+        return node.neighbors;
     }
 
     public int getSize(){
         return this.vertices.size();
     }
-    public LinkedList<Node> breadthFirstTraversal(Node<T> start){
-        LinkedList<Node> result = new LinkedList<>();
-        LinkedList<Node> visited = new LinkedList<>();
+
+    public static LinkedList<Node> breadthFirstSearch(Node start){
+        LinkedList resultList = new LinkedList();
+        HashSet<Node> visited = new HashSet<>();
+
+        if(start == null){
+            throw new NullPointerException("Cannot be null");
+        }
+
         Queue queue  = new LinkedList();
-
-        //add start node
-
         queue.add(start);
         visited.add(start);
 
-        while(queue.size() != 0){
-            Node node = (Node)queue.remove();
-            result.add(node);
-            for(Node neighbor:  (HashSet<Node>)node.getNeighbors()){
-                if(!visited.contains(neighbor)){
-                    queue.add(neighbor);
-                    visited.add(neighbor);
+        while(!queue.isEmpty()){
+            Node tempNode = (Node) queue.remove();
+            resultList.add(tempNode);
+
+            for(Edges neighbor: (HashSet<Edges>) tempNode.neighbors){
+                if(!visited.contains(neighbor.node)){
+                    queue.add(neighbor.node);
+                    visited.add(neighbor.node);
                 }
             }
         }
+        return resultList;
+    }
 
-        return result;
+    @SuppressWarnings("unchecked")
+    public static void main(String[] args) {
+        Graph graph = new Graph();
+        Node cat = graph.addNode("cat");
+        Node dog = graph.addNode("dog");
+        Node hamster = graph.addNode("hamster");
+        //        System.out.println(cat);
+        cat.addNeighbor(dog, 20);
+        cat.addNeighbor(hamster, 50);
 
+        dog.addNeighbor(cat);
+        hamster.addNeighbor(cat);
+
+        //check for edges
+        System.out.println("Check for edges");
+        System.out.println(graph.addEdge(cat, dog));
+        System.out.println(graph.addEdge(cat, hamster));
+
+        System.out.println("Get Nodes: "  +graph.getNodes().toString());
+
+        System.out.println("Get " + cat + " neighbors: " + graph.getNeighbors(cat));
+        System.out.println("Get " + dog + " neighbors: " + graph.getNeighbors(dog));
+        System.out.println("Get " + hamster + " neighbors: " + graph.getNeighbors(hamster));
+
+        System.out.println(graph.getSize());
+
+        System.out.println("BFS: " + breadthFirstSearch(cat));
+        System.out.println("BFS: " + breadthFirstSearch(dog));
+        System.out.println("BFS: " + breadthFirstSearch(hamster));
     }
 }
